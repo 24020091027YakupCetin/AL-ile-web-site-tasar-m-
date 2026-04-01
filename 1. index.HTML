@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yakup Çetin | Yazılım Mühendisi & Frontend Geliştiricisi</title>
+    <meta name="description" content="Yazılım Mühendisi ve Frontend Geliştiricisi Yakup Çetin'in profesyonel portfolyo web sitesi. Firmalar için modern web çözümleri.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Mouse Reactive Background / Cursor Effect -->
+    <div class="cursor-glow"></div>
+    <!-- Spinner Loading Overlay (Hidden by default) -->
+    <div id="loader" class="loader-overlay hidden">
+        <div class="spinner"></div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="brand-text">Yakup<span class="highlight">Çetin</span></span>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero" class="nav-btn" id="nav-home">Anasayfa</a></li>
+            <li><a href="#about" class="nav-btn">Hakkımda</a></li>
+            <li><a href="#services" class="nav-btn">Hizmetler</a></li>
+            <li><a href="#portfolio" class="nav-btn">Portfolyo</a></li>
+            <li><a href="#contact" class="nav-btn">İletişim</a></li>
+        </ul>
+    </nav>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="hero-content">
+                <p class="greeting reveal-up">Merhaba, ben</p>
+                <h1 class="title reveal-up" style="transition-delay: 0.1s">Yakup Çetin</h1>
+                <div class="typing-container reveal-up" style="transition-delay: 0.2s">
+                    <span class="typing-text" id="typing-text"></span><span class="cursor">|</span>
+                </div>
+                <p class="description reveal-up" style="transition-delay: 0.3s">
+                    Güçlü ve estetik ürünler inşa eden bir Yazılım Mühendisi ve Frontend Geliştiricisiyim. Şirketinizin dijital dönüşümüne vizyon katan modern arayüzler tasarlıyorum.
+                </p>
+                <div class="cta-group reveal-up" style="transition-delay: 0.4s">
+                    <a href="#portfolio" class="btn btn-primary">Projeleri İncele <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-outline">İletişime Geç</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual reveal-right" style="transition-delay: 0.3s">
+                <div class="visual-circle">
+                    <!-- Placeholder graphic -->
+                    <div class="floating-element el-1"><i class="fab fa-react"></i></div>
+                    <div class="floating-element el-2"><i class="fab fa-js"></i></div>
+                    <div class="floating-element el-3"><i class="fab fa-html5"></i></div>
+                    <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=400&auto=format&fit=crop" alt="Yazılım Geliştirici Temsili Görsel" class="profile-placeholder">
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="section-header reveal-up">
+                <h2>Beni <span class="highlight">Tanıyın</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content reveal-up">
+                <p>Yenilikçi teknolojileri takip ederek markalar ve şirketler için kullanıcı dostu, yüksek performanslı web uygulamaları geliştiriyorum. Beyaz alanın ferahlığı ve neon renklerin dinamizmini birleştiren premium tasarımlar hedefim.</p>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section id="services" class="services section bg-light">
+            <div class="section-header reveal-up">
+                <h2>Kurumsal <span class="highlight">Çözümler</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>Modern Frontend Geliştirme</h3>
+                    <p>En güncel framework'ler ile hızlı, SEO uyumlu ve ölçeklenebilir önyüz uygulamaları kodluyorum.</p>
+                </div>
+                <div class="service-card reveal-up" style="transition-delay: 0.1s">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Responsive Tasarım</h3>
+                    <p>Mobil, tablet ve masaüstü dâhil tüm cihazlarda kusursuz çalışan esnek arayüzler hazırlıyorum.</p>
+                </div>
+                <div class="service-card reveal-up" style="transition-delay: 0.2s">
+                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>UI / UX Odaklılık</h3>
+                    <p>Müşteri etkileşimini artıracak, estetik kurallara ve mükemmel kullanıcı deneyimine (UX) uygun tasarımlar.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Placeholder -->
+        <section id="portfolio" class="portfolio section">
+            <div class="section-header reveal-up">
+                <h2>Seçkin <span class="highlight">Projeler</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal-up">
+                    <img src="https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=600&auto=format&fit=crop" alt="Proje 1">
+                    <div class="portfolio-overlay">
+                        <h3>Kurumsal Panel</h3>
+                        <p>Dashboard UI</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal-up" style="transition-delay: 0.1s">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop" alt="Proje 2">
+                    <div class="portfolio-overlay">
+                        <h3>E-Ticaret Platformu</h3>
+                        <p>Web Uygulaması</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal-up" style="transition-delay: 0.2s">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600&auto=format&fit=crop" alt="Proje 3">
+                    <div class="portfolio-overlay">
+                        <h3>Ajans Portfolyo</h3>
+                        <p>Landing Page</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact -->
+        <section id="contact" class="contact section bg-light">
+            <div class="section-header reveal-up">
+                <h2>İletişim <span class="highlight">Kurun</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-content reveal-up">
+                <p>Şirketiniz için yeni bir proje fikriniz mi var? Gelin beraber çalışalım.</p>
+                <div class="contact-info">
+                    <a href="mailto:info@yakupcetin.com" class="contact-link"><i class="fas fa-envelope"></i> info@yakupcetin.com</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="brand-text">Yakup<span class="highlight">Çetin</span></div>
+            <p>&copy; <span id="year"></span> Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/905555555555" target="_blank" class="whatsapp-btn hidden" id="whatsapp-btn" aria-label="WhatsApp İletişim">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="script.js"></script>
+</body>
+</html>
